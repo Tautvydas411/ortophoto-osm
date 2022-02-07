@@ -1,0 +1,25 @@
+#!/bin/bash
+
+# training plan
+
+./train_new_noamp.py --batch-size 4 --test-batch-size 32 --pretrained --save-dir /tmp/andrius/finelearning-org-pretrained-p-all --lr 0.0001 --epochs 100 --pretrained --train-data-yml finetune.yml
+./train_new_noamp.py --batch-size 4 --test-batch-size 32 --pretrained --save-dir /tmp/andrius/finelearning-org-pretrained-p-1 --lr 0.0001 --epochs 100 --pretrained --train-data-yml finetune.yml --force-period 1
+./train_new_noamp.py --batch-size 4 --test-batch-size 32 --pretrained --save-dir /tmp/andrius/finelearning-org-pretrained-p-2 --lr 0.0001 --epochs 100 --pretrained --train-data-yml finetune.yml --force-period 2
+./train_new_noamp.py --batch-size 4 --test-batch-size 32 --pretrained --save-dir /tmp/andrius/finelearning-org-pretrained-p-3 --lr 0.0001 --epochs 100 --pretrained --train-data-yml finetune.yml --force-period 3
+
+./train_new_noamp.py --batch-size 4 --test-batch-size 32 --pretrained --save-dir /tmp/andrius/finelearning-org-random-p-all --lr 0.0001 --epochs 100 --pretrained --train-data-yml finetune.yml --randomize-weights
+./train_new_noamp.py --batch-size 4 --test-batch-size 32 --pretrained --save-dir /tmp/andrius/finelearning-org-random-p-1 --lr 0.0001 --epochs 100 --pretrained --train-data-yml finetune.yml --force-period 1 --randomize-weights
+./train_new_noamp.py --batch-size 4 --test-batch-size 32 --pretrained --save-dir /tmp/andrius/finelearning-org-random-p-2 --lr 0.0001 --epochs 100 --pretrained --train-data-yml finetune.yml --force-period 2 --randomize-weights
+./train_new_noamp.py --batch-size 4 --test-batch-size 32 --pretrained --save-dir /tmp/andrius/finelearning-org-random-p-3 --lr 0.0001 --epochs 100 --pretrained --train-data-yml finetune.yml --force-period 3 --randomize-weights
+
+
+
+./train_new_noamp.py --batch-size 4 --test-batch-size 32 --pretrained --resume /home/andkris/palydovai/resources/pretrained-experiment-epoch_0045_mIoU_0.7215.params --save-dir /tmp/andrius/finelearning-coarse-pretrained-p-all --lr 0.0001 --epochs 100 --pretrained --train-data-yml finetune.yml
+./train_new_noamp.py --batch-size 4 --test-batch-size 32 --pretrained --resume /home/andkris/palydovai/resources/pretrained-experiment-epoch_0045_mIoU_0.7215.params --save-dir /tmp/andrius/finelearning-coarse-pretrained-p-1 --lr 0.0001 --epochs 100 --pretrained --train-data-yml finetune.yml --force-period 1
+./train_new_noamp.py --batch-size 4 --test-batch-size 32 --pretrained --resume /home/andkris/palydovai/resources/pretrained-experiment-epoch_0045_mIoU_0.7215.params --save-dir /tmp/andrius/finelearning-coarse-pretrained-p-2 --lr 0.0001 --epochs 100 --pretrained --train-data-yml finetune.yml --force-period 2
+./train_new_noamp.py --batch-size 4 --test-batch-size 32 --pretrained --resume /home/andkris/palydovai/resources/pretrained-experiment-epoch_0045_mIoU_0.7215.params --save-dir /tmp/andrius/finelearning-coarse-pretrained-p-3 --lr 0.0001 --epochs 100 --pretrained --train-data-yml finetune.yml --force-period 3
+
+./train_new_noamp.py --batch-size 4 --test-batch-size 32 --pretrained --resume /home/andkris/palydovai/resources/random-experiment-epoch_0044_mIoU_0.4096.params --save-dir /tmp/andrius/finelearning-coarse-random-p-all --lr 0.0001 --epochs 100 --pretrained --train-data-yml finetune.yml
+./train_new_noamp.py --batch-size 4 --test-batch-size 32 --pretrained --resume /home/andkris/palydovai/resources/random-experiment-epoch_0044_mIoU_0.4096.params --save-dir /tmp/andrius/finelearning-coarse-random-p-1 --lr 0.0001 --epochs 100 --pretrained --train-data-yml finetune.yml --force-period 1
+./train_new_noamp.py --batch-size 4 --test-batch-size 32 --pretrained --resume /home/andkris/palydovai/resources/random-experiment-epoch_0044_mIoU_0.4096.params --save-dir /tmp/andrius/finelearning-coarse-random-p-2 --lr 0.0001 --epochs 100 --pretrained --train-data-yml finetune.yml --force-period 2
+./train_new_noamp.py --batch-size 4 --test-batch-size 32 --pretrained --resume /home/andkris/palydovai/resources/random-experiment-epoch_0044_mIoU_0.4096.params --save-dir /tmp/andrius/finelearning-coarse-random-p-3 --lr 0.0001 --epochs 100 --pretrained --train-data-yml finetune.yml --force-period 3
