@@ -6,9 +6,7 @@ This is public code repository for Lithuania geospatial data segmentation. It is
 ## Required data
 * Ortophoto https://www.geoportal.lt/geoportal/en/web/en - ~12Tb raw data (it can be smaller after compression)
 * OpenStreetmap https://planet.openstreetmap.org/ - for this model we used full country Lithuania, but for other data it necessary to filter by boundaries
-
 * sample data https://github.com/Tautvydas411/ortophoto-osm/releases/tag/v1.0
-* 
 ## Project strucrure
 * pictureslib - vector,raster image processing utilities and dataset iterator
 * dataset_prepare - labelled dataset generator from openstreetmap data
