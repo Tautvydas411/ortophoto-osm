@@ -1,7 +1,7 @@
 # ortophoto-osm
 This is public code repository for Lithuania geospatial data segmentation. It is used by Kaunas University of Technology scientists. The code is used for investigation of neural networks using openstreetmap database as labeling source. More detail are in "Urban Change Detection from Aerial Images Using Convolutional Neural Networks and Transfer Learning" paper.
 
-**note: due to sheer size of volume and data licensing the project have direct links in storage which need to be modified acordingly including EPSG transformations**
+**note: due to sheer size of volume and data licensing the project have direct links to storage, which need to be modified acordingly (including EPSG transformations functions)**
 
 ## Required data
 * Ortophoto https://www.geoportal.lt/geoportal/en/web/en - ~12Tb raw data (it can be smaller after compression)
